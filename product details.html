@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF_8">
+    <title>All Products - SpoZ </title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+
+    
+    <div class="container">
+<div class="navbar">
+    <div class="logo">
+        <img src="images/sprz logo.jfif" width="150px">
+    </div>
+    <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>        
+          <li><a href="">Account</a></li>
+        </ul>
+    </nav>
+    <img src="images/kart icon.jfif" width="20px" height="20px">
+</div>
+</div>
+</div>  
+
+<!-------------------Single Product Details----------------->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/pro-13.jpg" width="70%" id="productImg">
+
+            <div class="small-img-row">
+                <div class="smallImg-col">
+                    <img src="images/pro-13.jpg" width="70%" class="smallImg">
+                </div>
+                <div class="smallImg-col">
+                    <img src="images/pro-13b.jpg" width="70%" class="smallImg">
+                </div>
+                <div class="smallImg-col">
+                    <img src="images/pro-13.jpg" width="70%" class="smallImg">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>White Printed Tshirt by Puma</h1>
+            <h4>Rs 999.00</h4>
+            <select>
+                <option>Select-size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to kart</a>
+            <h3>Product details<i class="fa fa-indent"></i> </h3>
+            
+            <p>Package contains: 1 t-shirt</p>
+            <p>Machine wash warm</p>
+            <p>Relaxed Fit</p>
+            <p>Product Code: 0013</p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<!-------------------Title----------------->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Product</h2>
+        <p>View more</p>
+    </div>
+</div>
+
+
+
+
+
+
+<!-------------------Product----------------->
+
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images/pro-1.jpg">
+            <h4>Adidas Women Sweatshirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>               
+            </div>
+            <p>Rs.999.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/pro-2.jpg">
+            <h4>Adidas Men Short</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>               
+            </div>
+            <p>Rs.1999.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/pro-3.jpg">
+            <h4>Puma Women Track pants</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>               
+            </div>
+            <p>Rs.3999.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/pro-4.jpg">
+            <h4>Adidas Men Track suits</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Rs.4999.00</p>
+        </div>
+
+        
+        
+    </div>
+
+<!-------------------footer----------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                 <h3>Download our App</h3>
+                 <p>Download App for Androide and ios Mobile phone. </p>
+                 <div class="app-logo">
+                     <img src="images/playstorelogo.png">
+                     <img src="images/applestorelogo.png"> 
+                 </div>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affilite</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------Js for product gallery----------------->
+<script>
+    var productImg = document.getElementById (productImg); 
+    var smallImg = document.getElementsByClassName (small-img);
+    smallImg[0].onclick = function()
+    {
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        productImg.src = smallImg[2].src;
+    }
+    
+    
+
+
+</script>
+</body>
+</html>
